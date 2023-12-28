@@ -1,13 +1,10 @@
 package com.example.consumerdrivencontracts;
 
-import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
+import au.com.dius.pact.consumer.junit5.PactTestFor;
 
-@SpringBootTest
+@PactTestFor(providerName = "test_provider", hostInterface="localhost")
 class ConsumerDrivenContractsApplicationTests {
 
-	@Test
-	void contextLoads() {
-	}
+
 
 }
